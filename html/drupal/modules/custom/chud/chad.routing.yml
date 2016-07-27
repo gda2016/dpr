@@ -1,0 +1,6 @@
+chad_page:
+  patten: '/chad'
+  defaults:
+    _content: 'Drupal\chad\Controller\ChadController::chadPage'
+  requirments:
+    _premissi on: 'view content'
