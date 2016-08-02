@@ -1,0 +1,6 @@
+autosfera:
+  path: /autosfera
+  defaults:
+    _controller: Drupal\autosfera\Controller\AutoSferaController::auto
+  requirements:
+    _permission: 'access content'

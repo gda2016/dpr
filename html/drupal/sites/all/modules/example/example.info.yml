@@ -1,0 +1,8 @@
+name: Example
+description: A simple Example module.
+core: 8.x
+package: Custom
+dependencies:
+- node
+
+type: module
