@@ -1,8 +1,0 @@
-name: Chad
-description: A simple hello module.
-core: 8.x
-package: Custom
-dependencies:
-- node
-- block
-type: module

@@ -1,7 +1,0 @@
-name: Example
-type: module
-description: 'F simple example mobule.
-core: 8.x
-package: Custom
-dependensies:
-- node
