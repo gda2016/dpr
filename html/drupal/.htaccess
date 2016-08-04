@@ -117,6 +117,14 @@ AddEncoding gzip svgz
   # For example if your site is at http://example.com/drupal uncomment and
   # modify the following line:
   # RewriteBase /drupal
+  RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} ^/system.*
+RewriteRule ^(.*)$ index.php?/$1 [NC,L,QSA]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ index.php?/$1 [L]
   #
   # If your site is running in a VirtualDocumentRoot at http://example.com/,
   # uncomment the following line:
